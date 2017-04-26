@@ -21,7 +21,9 @@ body{
   padding: 0;
   border-radius: 3px;
   background-color: #fff;
+  z-index: 1;
 }
+
 .hide{display: none !important;}
 .show{display: block !important;}
 /*-------------- Grid System -----------*/
@@ -254,10 +256,10 @@ img{
 /*-------------  Link type ---------------*/
 a{
   text-decoration: none;
-  color:#308133;
+  color:#27AE61;
 }
 a:hover{
-  color:#206223;
+  color:#3B3C3B;
 }
 a.hover{
   color:#206223;
@@ -1716,26 +1718,49 @@ display: block;
 
   color:red;
 }
-#top, #bottom, #left, #right {
+.top, .bottom, .left, .right {
   background: #00CA72;
 }
-#left, #right {
+.left, .right {
   position: fixed;
   top: 0; bottom: 0;
   width: 15px;
 }
-#left { left: 0; }
-#right { right: 0; }
+.left { left: 0; }
+.right { right: 0; }
 
-#top, #bottom {
+.top, .bottom {
   position: fixed;
   left: 0; right: 0;
   height: 15px;
 }
-#top { top: 0; }
-#bottom { bottom: 0; }
+.top { top: 0; }
+.bottom { bottom: 0; }
 
 @media only screen and (max-width: 500px),
 only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-  #top, #bottom, #left, #right { display: none; }
+  .top, .bottom, .left, .right { display: none; }
 }
+
+.wrapper{
+  padding-top: 100px;
+}
+.bg {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+.bg img {
+  position: relative;
+
+  z-index: -1;
+
+}
+.blue{color: blue;}
+.rosso{color:red;}
+.grigio{color:grey;}
+.oro{color:gold;}
+.fucsia{color:fuchsia;}
+.verde{color:green;}
+.giallo{color: yellow;}
+.rosa{color:pink;}

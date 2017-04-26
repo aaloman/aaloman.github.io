@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 	<script src="default.js" charset="utf-8"></script>
 	<!--[if lte IE 6]>
-		<style>#top, #bottom, #left, #right { display: none; }</style>
+	<style>#top, #bottom, #left, #right { display: none; }</style>
 	<![endif]-->
 </head>
 
@@ -15,18 +15,17 @@
 
 	<div class="content" style="margin:100px;">
 		<div class="holder-fluid">
-			<h2 style="border:1px solid #00ca72;float:left;color:#00ca72;padding:5px;border-radius:3px">AK</h2>
+			<h2 style="border:1px solid #00ca72;float:left;color:#00ca72;padding:5px;box-shadow: 0 0 10px #9ecaed;">AK</h2>
 			<div class="list-inline" style="float:right;padding:10px;">
 				<ul>
-					<li><a href="#">Resume</a></li>
+					<li><a href="#" onclick="resume(event)">Resume</a></li>
 					<li><a href="#">Work</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</div>
-<br><br><br><br>
-<br>
-			<h2>Hello !<br>I am Apple Khan <br>I am a UI & UX Designer</h2><br><button type="button" name="button" class="btn btn-success">Hire Me</button><br><br><br><br>
+		<div class="wrapper" id="wrapper">
+			<h2>Hello !<br>I am Apple Khan <br>I am a UI & UX <span class="blue">D</span><span class="rosso">e</span><span class="giallo">s</span><span class="verde">i</span><span class="oro">g</span><span class="fucsia">n</span><span class="grigio">e</span><span class="rosa">r</span></h2><br><button type="button" name="button" class="btn btn-success">Hire Me</button><br><br><br><br>
 			<div class="list-inline">
 				<ul>
 					<li><a href="#">Dribbble</a></li>
@@ -35,12 +34,21 @@
 					<li><a href="#">Google+</a></li>
 				</ul>
 			</div>
-
+		</div>
 	</div>
-	<div id="left"></div>
-	<div id="right"></div>
-	<div id="top"></div>
-	<div id="bottom"></div>
+
+	<div class="left"></div>
+	<div class="right"></div>
+	<div class="top"></div>
+	<div class="bottom"><div class="bg"><img src="bg.png" alt=""></div></div>
+
+
+	<script type="text/javascript">
+		function resume(e) {
+			var initialPage = location.pathname;
+  		location.replace(initialPage + '/asdfasdf');
+		}
+	</script>
 
 </body>
 
