@@ -21,7 +21,6 @@ body{
   padding: 0;
   border-radius: 3px;
   background-color: #fff;
-  z-index: 1;
 }
 
 .hide{display: none !important;}
@@ -1746,21 +1745,23 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px){
   padding-top: 100px;
 }
 .bg {
-  position: absolute;
+  position: relative;;
+  height: 1px;
+  padding-top: 105px;
+}
+.bg img {
+  float: right;
+  max-width: 750px;
+  position: absolute;;
+  z-index: -1;
   right: 15px;
   bottom: 10px;
 }
-.bg img {
-  position: relative;
-
-  z-index: -1;
-
-}
-.blue{color: blue;}
-.rosso{color:red;}
-.grigio{color:grey;}
-.oro{color:gold;}
-.fucsia{color:fuchsia;}
-.verde{color:green;}
-.giallo{color: yellow;}
-.rosa{color:pink;}
+.blue{color: #20409A;}
+.rosso{color:#EF4036;}
+.grigio{color:#39B54A;}
+.oro{color:#32A58B;}
+.fucsia{color:#92278F;}
+.verde{color:#3B3C3B;}
+.giallo{color: #8CC63F;}
+.rosa{color:#764C29;}
