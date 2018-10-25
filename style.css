@@ -1723,7 +1723,7 @@ display: block;
 .left, .right {
   position: fixed;
   top: 0; bottom: 0;
-  width: 15px;
+  width: 30px;
 }
 .left { left: 0; }
 .right { right: 0; }
@@ -1731,7 +1731,7 @@ display: block;
 .top, .bottom {
   position: fixed;
   left: 0; right: 0;
-  height: 15px;
+  height: 30px;
 }
 .top { top: 0; }
 .bottom { bottom: 0; }
